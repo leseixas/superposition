@@ -4,7 +4,7 @@ namespace superposition {
     open Microsoft.Quantum.Measurement;
     
     @EntryPoint()
-    operation runProgram() : Result {
+    operation Main() : Result {
         using (q = Qubit()) {
             H(q);               // Hadamard quantum gate
             return MResetZ(q);
